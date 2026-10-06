@@ -17,6 +17,7 @@ const corsOptions = {
     "http://localhost:3000",
     "http://localhost:5173",
     "https://inventorysystem-opal.vercel.app",
+    "https://ims-frontend-dusky-one.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
