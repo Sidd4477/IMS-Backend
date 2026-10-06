@@ -9,7 +9,7 @@ const Sentry = require("@sentry/node");
 const app = express();
 
 const { initDB } = require("./model/SQL_Model");
-const { connectRedis } = require("./config/redis"); 
+// const { connectRedis } = require("./config/redis"); 
 
 // CORS Policy
 const corsOptions = {
@@ -93,8 +93,8 @@ async function startServer() {
     console.log(" SQL DB initialized");
 
     //  REDIS CONNECTION
-    await connectRedis();
-    console.log(" Redis connected");
+    // await connectRedis();
+    // console.log(" Redis connected");
 
     // Start server only after all services are ready
     const PORT = process.env.PORT || 8000;
