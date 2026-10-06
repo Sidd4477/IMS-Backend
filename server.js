@@ -17,13 +17,13 @@ const corsOptions = {
     "http://localhost:3000",
     "http://localhost:5173",
     "https://inventorysystem-opal.vercel.app",
-    "https://ims-frontend-dusky-one.vercel.app"
+    "https://ims-frontend-dusky-one.vercel.app",
+    "https://ims-frontend-954nz1pm0-siddharth-kumar-jha-s-projects.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 };
-
 // Middlewares
 app.use(cors(corsOptions));
 app.use(express.json());
